@@ -1,0 +1,27 @@
+# Local Python environments and generated files
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Downloaded model files, local configuration, and logs
+.cache/
+.huggingface/
+*.bin
+*.safetensors
+.env
+.env.*
+!.env.example
+*.log
+
+# Operating-system files
+.DS_Store
+Thumbs.db

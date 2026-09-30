@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Noto Sans", Arial, sans-serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #242424;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 280px;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid #242424;
+  outline-offset: 4px;
+}
+
+.language-select:focus-visible {
+  outline-offset: -6px;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.translation-panel:has(textarea:focus-visible) {
+  box-shadow: 0 0 0 3px #e7e5e4;
+}
+
+textarea {
+  scrollbar-width: thin;
+}
+
+select:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+@media (min-width: 768px) {
+  .swap-button {
+    align-self: start;
+    margin-top: 4.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .studio-frame {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
